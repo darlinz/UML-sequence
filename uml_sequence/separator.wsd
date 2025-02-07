@@ -1,0 +1,13 @@
+@startuml
+
+== Initialization ==
+
+J -> Shaggy: Another request
+Shaggy ---> J: Another response
+
+== Repetition ==
+
+J -> Shaggy: Another request
+J <--- Shaggy: Another response
+
+@enduml

@@ -1,0 +1,3 @@
+@startuml
+Alice -> Alice: This is alarm to myself.\nAlso this is demonstration\nmulyi-line \ntext.
+@enduml

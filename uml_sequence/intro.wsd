@@ -1,0 +1,27 @@
+@startuml
+Bob ->x Alice
+Bob -> Alice
+Bob ->> Alice
+Bob -\ Alice
+Bob \\- Alice
+Bob //-- Alice
+
+Bob ->o Alice
+Bob <->o Alice
+@enduml
+
+@startuml
+Bob -[#red]> Alice : yes, may i help ya?
+Alice -[#0000FF]-> Bob : Yeah, lemme get, \nuh, three soft tacos with \nno lettuce, a chilito, and a nacho b-
+Bob -[#red]> Alice : Excuse me, ma'am, but we dont have, \nhow do ya say, chilito
+Alice -[#0000FF]-> Bob : A chilito, a chilito, ya know what im sayin'? \nThe, um, its a-
+Bob -[#red]> Alice : No, ma'am, i dont know. We have no cholitos \nas you say. This is Taco Land; we only have \ntheir fresh vegetables with pita loaf. we have no \ncholitos
+Alice -[#0000FF]-> Bob : Man, #### that! Im lookin' at this #### right \non the menu! I want a cholito!
+Bob -[#red]> Alice : Perhaps, instead, I make for u a fresh slice of \nof tomato on pita, no?
+Alice -[#0000FF]-> Bob : What the ####?! I want a #########' chilito, man
+Bob -[#red]> Alice : Yeah? #####
+Alice -[#0000FF]-> Bob : What?
+Bob -[#red]> Alice : #######
+Alice -[#0000FF]-> Bob : Hey, #### #, ######!
+Bob -[#red]> Alice : No. #### ###!
+@enduml

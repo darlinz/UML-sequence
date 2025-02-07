@@ -1,0 +1,6 @@
+@startuml
+Shaggy -> J: hi
+activate J
+J -> J: some kind of activity
+return bye.
+@enduml
