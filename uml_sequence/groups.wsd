@@ -1,0 +1,12 @@
+@startuml
+
+box "Interval service" #HotPink
+participant J 
+participant Shaggy 
+end box
+participant Who 
+
+J -> Shaggy: heya 
+Shaggy -> Who: nah 
+
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+actor User as User #HotPink
+participant "Shop site" as Site
+participant "Payment system" as Payment
+participant "Delivery Service" as Delivery
+participant "Email/SMS Service" as Notification
+
+User -> Site : Open site
+Site -> User : Displays the catalog
+
+User -> Site : Selects a product  
+User -> Site : Adds product to cart  
+Site -> User : Confirms addition  
+
+User -> Site : Goes to checkout  
+User -> Site : Enters details (address, contacts)  
+User -> Site : Chooses payment method  
+
+
+Payment -> Site : Payment success  
+Site -> User : Order confirmed  
+
+Site -> Notification : Send order confirmation  
+Notification -> User : Email/SMS confirmation  
+
+Site -> Delivery : Transfers order  
+Delivery -> Site : Delivery confirmation  
+
+Site -> User : Provides tracking number  
+User -> Delivery : Checks order status  
+
+Delivery -> User : Delivers product  
+User -> Site : Requests a return (if needed)  
+Site -> User : Confirms return  
+Site -> Notification : Send return confirmation  
+Notification -> User : Email/SMS return update  
+  
+
+@enduml
+

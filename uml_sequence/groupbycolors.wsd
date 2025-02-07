@@ -1,0 +1,8 @@
+@startuml
+J->Shaggy: another request
+alt#HotPink #Aqua successful case
+    Shaggy->J: another response
+else #Red Error 
+    Shaggy->J: declined
+end
+@enduml
