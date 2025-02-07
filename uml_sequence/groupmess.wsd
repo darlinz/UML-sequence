@@ -1,0 +1,22 @@
+@startuml
+J -> Shaggy: Authentication request
+
+alt successful case
+    Shaggy -> J: Authentication accepted
+
+else some kind of failure
+
+    Shaggy -> J: Authentication failure
+    group My own label
+    J -> Shaggy: Log attack start
+        loop 1000 times
+            J -> Shaggy: DNS attack
+        end
+    J -> Shaggy: Log attack end
+    end
+
+else Another type of failure
+
+    Shaggy -> J: Please repeat
+end
+@enduml

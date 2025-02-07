@@ -1,0 +1,14 @@
+@startuml
+J -> Shaggy: hi
+note left: this is first note 
+
+Shaggy -> J: yea?
+note right: this is second note
+
+Shaggy->Shaggy: thinkin 'bout that
+note left
+notes
+can blah
+few strokes
+end note
+@enduml
